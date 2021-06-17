@@ -1,0 +1,112 @@
+* {/*se establece la fuente, relleno y margen general*/
+  padding: 0px;
+  margin: 0px;
+  font-family: Century Gothic, sans-serif;
+}
+body {/*se establece el fondo del cuerpo*/
+  background-image: url("fondo.jpg");
+}
+
+.calculadora {
+  /*se establece el color de fondo, ancho, margen, margen superior, sombra y el radio de las esquinas*/
+  background-color: hsl(152, 93%, 88%);
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 20px 20px 30px #000;
+  border-radius: 20px;
+}
+
+.botonesC {
+  /*se establece el relleno*/
+  padding: 0px 8px 8px 8px;
+}
+
+.botonesC button {
+  /*se establece la anchura, color de fondo, color de texto, borde, tamano de fuente y relleno*/
+  width: 30%;
+  background-color: #f87e7e;
+  color: #fff;
+  border: none;
+  font-size: 40px;
+  padding: 0px;
+}
+.botonesC button:hover {
+  /*se establecen las sombras para esta seccion*/
+  box-shadow: 0px 0px 12px #aaa;
+}
+
+.teclas {/*se configura la forma de visualizacion*/
+  display: flex;
+}
+
+.pantalla {
+  /*se establece el relleno*/
+  padding: 18px 18px 0px 18px;
+}
+
+.numeros {
+  /*se establece el relleno*/
+  padding: 18px 9px 18px 18px;
+}
+.operaciones {
+  /*se establece el relleno*/
+  padding: 18px 18px 18px 9px;
+}
+
+#resultado {
+  /*se establece la altura, el color de fondo, relleno, ademas tipo, color y tamaño de fuente*/
+  height: 20px;
+  background-color: rgb(51, 51, 51);
+  padding: 10px;
+  font-family: monospace;
+  color: #eee;
+  font-size: 20px;
+}
+
+.operaciones button {
+  /*se establece que se trabajara como bloque, un ancho, un alto, un relleno, 
+  un color de fondo y de fuente, ademas de un borde y transicion,*/
+  display: block;
+  width: 54px;
+  height: 54px;
+  padding: 9px 15px;
+  background-color: rgb(108, 55, 255);
+  color: #fff;
+  border: none;
+  transition: all 0.09s;
+}
+.operaciones button:hover {/*se establecen las sombras para esta seccion*/
+  box-shadow: 0px 0px 12px #aaa;
+}
+
+.numeros div {
+  /*se establece la alineacion del texto al centro*/
+  text-align: center;
+}
+
+.numeros button {
+  /*se establece el borde,color de fondo, y transicion*/
+  border: 0px;
+  background-color: #fff;
+  transition: all 0.09s;
+}
+
+.numeros button:hover {/*se establecen las sombras para esta seccion*/
+  box-shadow: 0px 0px 12px #aaa;
+}
+button {
+  /*se establecen los margenes, el relleno, el tamaño de fuente y lo redondeado que estara el boton*/
+  margin: 2px 0px;
+  padding: 15px 24px;
+  font-size: 19px;
+  border-radius: 100px;
+}
+footer{
+  /*se establecen el color de fondo, margen, relleno tamano y color de la fuente de texto*/
+  background-color: #000;
+  margin: 50px 0px;
+  padding: 10px 24px;
+  font-size: 14px;
+  color: #fff;
+}

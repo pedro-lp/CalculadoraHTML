@@ -1,0 +1,66 @@
+<html lang="es"><!--idioma es pañol-->
+
+  <head><!-- cabecera del html -->
+    <title>Calculadora</title><!-- titulo del html-->
+    <h1 align="center">Calculadora</h1><!--encabezado con alineacion central-->
+    <meta charset="utf-8" /><!--información sobre el documento-->
+    <link rel="stylesheet" type="text/css" href="estilo.css" /><!--Vínculos de documentos-->
+  </head><!-- fin de cabecera-->
+
+  <body><!--inicio del cuerpo del html-->
+    <div class="calculadora"><!--comieza division calculadora-->
+      <div class="pantalla"><!--comieza division pantalla-->
+      <input type="text" id="resultado" value="" disabled><!--etiqueta resultado que esta desactivada para solo mostrar informacion-->
+      </div><!--termina division-->
+      
+      <div class="teclas"><!--comieza division teclas-->
+        <div class="numeros"><!--comieza division numeros-->
+          <div><!--comieza division para los numeros-->
+            <button id="n7" onclick=numeroNuevo(7)>7</button><!--boton numerico con identificar que manda a llamar a un metodo al ser pulsado y le envia un valor-->
+            <button id="n8" onclick=numeroNuevo(8)>8</button><!--boton numerico con identificar que manda a llamar a un metodo al ser pulsado y le envia un valor-->
+            <button id="n9" onclick=numeroNuevo(9)>9</button><!--boton numerico con identificar que manda a llamar a un metodo al ser pulsado y le envia un valor-->            
+          </div><!--termina division para los numeros-->
+          
+          <div>
+            <button id="n4" onclick=numeroNuevo(4)>4</button>
+            <button id="n5" onclick=numeroNuevo(5)>5</button>
+            <button id="n6" onclick=numeroNuevo(6)>6</button>
+          </div>
+
+          <div>
+            <button id="n1" onclick=numeroNuevo(1)>1</button>
+            <button id="n2" onclick=numeroNuevo(2)>2</button>
+            <button id="n3" onclick=numeroNuevo(3)>3</button>
+          </div>
+
+          <div>
+            <button id="n0" onclick=numeroNuevo(0)>0</button>
+          </div>
+        </div>
+
+        <div class="operaciones"><!--comieza division para las operaciones numericas-->
+          <button id="suma" value="+" onclick=operacion(this.value)>+</button><!--boton de operacion con identificar que manda a llamar a un metodo y le envia un valor al ser pulsado-->
+          <button id="resta" value="-" onclick=operacion(this.value)>-</button><!--boton de operacion con identificar que manda a llamar a un metodo y le envia un valor al ser pulsado-->
+          <button id="multiplicacion" value="*" onclick=operacion(this.value)>x</button><!--boton de operacion con identificar que manda a llamar a un metodo y le envia un valor al ser pulsado-->
+          <button id="division" value="/" onclick=operacion(this.value)>÷</button><!--boton de operacion con identificar que manda a llamar a un metodo y le envia un valor al ser pulsado-->
+
+          <button id="factorial" value="!" onclick=operacion(this.value)>!</button><!--boton de operacion con-->
+
+        </div><!--termina division para los numeros-->
+      </div><!--termina division para los numeros-->
+
+      <div class="botonesC" align="center"><!--comieza division para los botones de abajo-->
+        <button id="borrar" onclick=borrarC()>C</button><!--boton que limpia la informacion y manda a llamar a un metodo al ser pulsado-->
+        <button id="igual" onclick=resultados()>=</button><!--boton de resultado y manda a llamar a un metodo al ser pulsado-->
+        <button id="retroceso" onclick=retroceso()>←</button><!--boton que borra un caracter y manda a llamar a un metodo al ser pulsado-->
+      </div><!--termina division para los numeros-->
+
+    </div><!--termina division para los numeros-->
+    <script src="script.js"></script><!--parte donde se manda a llamar a las funcionalidades que se encuentran en el archivo script-->
+  </body><!--termina el cuerpo del html-->
+
+  <footer><!--inicia el footer-->
+    <p align="center"> Pedro Alberto Lopez Pacheco</p><!--parrafo del footer-->
+  </footer><!--termina el footer-->
+
+</html><!--termina el archivo html-->
