@@ -1,5 +1,7 @@
 Este archivo sirve de ejemplo de como se utiliza GitHub
+
 se hacen cambios para el curso de GIT y GitHub de Platzi.com
 
 esta calculadora esta desarrollada en HTML, JavaScript, y CSS
+
 por Pedro Lopez Pacheco y publicado en calculadora-pedro-lp.vercel.app
