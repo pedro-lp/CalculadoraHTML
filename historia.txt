@@ -1,0 +1,3 @@
+Ete archivo sirve de ejemplo de como se utiliza git hub
+
+se hacen cambios para el curso de GIT y GitHub de PLATZI.COM
