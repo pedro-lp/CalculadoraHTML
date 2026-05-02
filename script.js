@@ -5,6 +5,9 @@ var pulsoSigno = false;//detecta cuando se termino de ingresar la primer cantida
 var signoOcupado = false;//solo permite introducir un operador a la vez
 
 function numeroNuevo(idElemento) {//captura los numeros
+  if (document.getElementById("resultado").value === "Error") {
+    document.getElementById("resultado").value = "";
+  }
   if (pulsoSigno) {//se captura el segundo numero
     signoOcupado = true;
     if (segundoNumero == false) {
