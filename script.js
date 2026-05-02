@@ -32,15 +32,14 @@ function operacion(tipoSigno) {//analiza que operacion se va a realizar
 function resultados() {//realiza la operacion y muestra el resultado
   primerNumero = parseFloat(primerNumero);//se asigna el numero como flotante
   segundoNumero = parseFloat(segundoNumero);//se asigna el numero como flotante
-  if (!primerNumero || !segundoNumero) {//verifica que no falten cantidades
-    //alert("Introduzca dos cantidades");
-    if (signo == "!") {//operacion suma
-      var total = 1; 
-	for (i=1; i<=primerNumero; i++) {
-		total = total * i; 
-	}
-  document.getElementById("resultado").value = total;//se imprime el total
-    } 
+  if (isNaN(primerNumero) || isNaN(segundoNumero)) {//verifica que no falten cantidades
+    if (signo == "!") {//operacion factorial
+      var total = 1;
+      for (i=1; i<=primerNumero; i++) {
+        total = total * i;
+      }
+      document.getElementById("resultado").value = total;//se imprime el total
+    }
   } else {
     let total;//variable local
     if (signo == "+") {//operacion suma
@@ -50,6 +49,12 @@ function resultados() {//realiza la operacion y muestra el resultado
     } else if (signo == "*") {//operacion multiplicacion
       total = primerNumero * segundoNumero;
     } else if (signo == "/") {//operacion division
+      if (segundoNumero === 0) {
+        document.getElementById("resultado").value = "Error";
+        primerNumero = segundoNumero = false;
+        signo = pulsoSigno = signoOcupado = false;
+        return;
+      }
       total = primerNumero / segundoNumero;
     }
     document.getElementById("resultado").value = total;//se imprime el total
